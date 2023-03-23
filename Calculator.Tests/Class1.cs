@@ -61,5 +61,11 @@ namespace Calculator.Tests
 
             Assert.Throws<DivideByZeroException>(() => calculator.Division(10, 0));
         }
+        [Test]
+        public void DivisionCallOverflowExceptionTest()
+        {
+            var calculator = new ModuleSixteen.Calculator();
+            Assert.Throws<OverflowException>(() => calculator.Division(int.MinValue, -1));
+        }
     }
 }

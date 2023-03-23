@@ -10,6 +10,6 @@ namespace ModuleSixteen
 
         public int Multiplication(int a, int b) => checked(a * b);
 
-        public int Division(int a, int b) => a / b;
+        public int Division(int a, int b) => checked(a / b);
     }
 }

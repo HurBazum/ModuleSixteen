@@ -9,7 +9,7 @@ namespace ModuleSixteen
             var calc = new Calculator();
             try
             {
-                Console.WriteLine(calc.Division(int.MaxValue, int.MaxValue));
+                Console.WriteLine(calc.Division(int.MinValue, -1));
             }
             catch(Exception e)
             {
